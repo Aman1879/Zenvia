@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenvia | Capture Memories. Share Your Story.</title>
+    <meta
+      name="description"
+      content="Zenvia is a Pinterest-inspired memory sharing platform where users can upload and showcase beautiful moments."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#home" class="logo" aria-label="Zenvia home">
+          <img src="images/logo.png" alt="Zenvia logo" class="logo-mark" />
+          <span>Zenvia</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation"
+        >
+          Menu
+        </button>
+
+        <ul class="nav-links" id="primary-nav">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#upload">Upload</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <form class="search-wrap" action="#" method="get">
+          <label for="search" class="sr-only">Search memories</label>
+          <input
+            id="search"
+            type="search"
+            placeholder="Search memories"
+            aria-label="Search categories and gallery"
+          />
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="hero-tag">A creative space for your favorite moments</p>
+          <h1>Capture Memories. Share Your Story.</h1>
+          <p class="hero-subtitle">
+            Upload your favorite moments from your phone or camera and preserve
+            memories forever.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#gallery" class="btn btn-primary">Explore Gallery</a>
+            <a href="#upload" class="btn btn-soft">Upload Memories</a>
+          </div>
+        </div>
+
+        <div class="floating-card card-1">
+          <img
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80"
+            alt="Friends smiling for a memory photo"
+          />
+          <span>Joyful Moments</span>
+        </div>
+
+        <div class="floating-card card-2">
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80"
+            alt="Portrait memory"
+          />
+          <span>Portrait Mood</span>
+        </div>
+
+        <div class="floating-card card-3">
+          <img
+            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=500&q=80"
+            alt="Mountain travel memory"
+          />
+          <span>Travel Diary</span>
+        </div>
+      </section>
+
+      <section class="section categories" id="categories">
+        <div class="container">
+          <div class="section-head">
+            <h2>Featured Categories</h2>
+            <p>
+              Discover memories by mood, place, and people you love the most.
+            </p>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card" data-category="nature" style="--bg:url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=80')">
+              <h3>Nature</h3>
+            </article>
+            <article class="category-card" data-category="travel" style="--bg:url('https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=900&q=80')">
+              <h3>Travel</h3>
+            </article>
+            <article class="category-card" data-category="food" style="--bg:url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80')">
+              <h3>Food</h3>
+            </article>
+            <article class="category-card" data-category="friends" style="--bg:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80')">
+              <h3>Friends</h3>
+            </article>
+            <article class="category-card" data-category="family" style="--bg:url('https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=80')">
+              <h3>Family</h3>
+            </article>
+            <article class="category-card" data-category="pets" style="--bg:url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80')">
+              <h3>Pets</h3>
+            </article>
+            <article class="category-card" data-category="fashion" style="--bg:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80')">
+              <h3>Fashion</h3>
+            </article>
+            <article class="category-card" data-category="street photography" style="--bg:url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=900&q=80')">
+              <h3>Street Photography</h3>
+            </article>
+            <article class="category-card" data-category="memories" style="--bg:url('https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=80')">
+              <h3>Memories</h3>
+            </article>
+            <article class="category-card" data-category="festivals" style="--bg:url('https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80')">
+              <h3>Festivals</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="container">
+          <div class="section-head">
+            <h2>Pinterest Style Memory Gallery</h2>
+            <p>
+              A visual wall of moments captured from everyday beauty and
+              once-in-a-lifetime stories.
+            </p>
+          </div>
+
+          <div class="masonry">
+            <article class="memory-card tall" data-category="nature travel" data-title="Sunrise trek with friends">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Mountain and lake" />
+              <div class="memory-overlay">
+                <button class="action-btn save-btn" type="button" aria-pressed="false">Save</button>
+                <button class="action-btn like-btn" type="button" aria-pressed="false">Like</button>
+              </div>
+              <p class="caption">Sunrise trek with friends.</p>
+            </article>
+
+            <article class="memory-card short" data-category="friends street photography" data-title="Couple in the city">
+              <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=800&q=80" alt="Couple in the city" />
+              <div class="memory-overlay">
+                <button class="action-btn save-btn" type="button" aria-pressed="false">Save</button>
+                <button class="action-btn like-btn" type="button" aria-pressed="false">Like</button>
+              </div>
+            </article>
+
+            <article class="memory-card medium" data-category="travel nature" data-title="A calm beach day to reset">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Ocean beach" />
+              <div class="memory-overlay">
+                <button class="action-btn save-btn" type="button" aria-pressed="false">Save</button>
+                <button class="action-btn like-btn" type="button" aria-pressed="false">Like</button>
+              </div>
+              <p class="caption">A calm beach day to reset.</p>
+            </article>
+
+            <article class="memory-card tall" data-category="fashion memories" data-title="Portrait with natural light">
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80" alt="Portrait with natural light" />
+              <div class="memory-overlay">
+                <button class="action-btn save-btn" type="button" aria-pressed="false">Save</button>
+                <button class="action-btn like-btn" type="button" aria-pressed="false">Like</button>
+              </div>
+            </article>
+
+            <article class="memory-card medium" data-category="family memories" data-title="Weekend family walk">
+              <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" alt="Family walk" />
+              <div class="memory-overlay">
+                <button class="action-btn save-btn" type="button" aria-pressed="false">Save</button>
+                <button class="action-btn like-btn" type="button" aria-pressed="false">Like</button>
+              </div>
+              <p class="caption">Weekend family walk.</p>
+            </article>
+
+            <article class="memory-card short" data-category="fashion street photography" data-title="Fashion memory">
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Fashion memory" />
+              <div class="memory-overlay">
+                <button class="action-btn save-btn" type="button" aria-pressed="false">Save</button>
+                <button class="action-btn like-btn" type="button" aria-pressed="false">Like</button>
+              </div>
+            </article>
+
+            <article class="memory-card medium" data-category="street photography memories" data-title="City lights after rain">
+              <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80" alt="Street with lights" />
+              <div class="memory-overlay">
+                <button class="action-btn save-btn" type="button" aria-pressed="false">Save</button>
+                <button class="action-btn like-btn" type="button" aria-pressed="false">Like</button>
+              </div>
+              <p class="caption">City lights after rain.</p>
+            </article>
+
+            <article class="memory-card tall" data-category="family festivals" data-title="Wedding memory">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Wedding memory" />
+              <div class="memory-overlay">
+                <button class="action-btn save-btn" type="button" aria-pressed="false">Save</button>
+                <button class="action-btn like-btn" type="button" aria-pressed="false">Like</button>
+              </div>
+            </article>
+
+            <article class="memory-card short" data-category="festivals friends" data-title="Festival crowd">
+              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Festival crowd" />
+              <div class="memory-overlay">
+                <button class="action-btn save-btn" type="button" aria-pressed="false">Save</button>
+                <button class="action-btn like-btn" type="button" aria-pressed="false">Like</button>
+              </div>
+            </article>
+
+            <article class="memory-card medium" data-category="travel memories" data-title="Road trip memories forever">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Road trip" />
+              <div class="memory-overlay">
+                <button class="action-btn save-btn" type="button" aria-pressed="false">Save</button>
+                <button class="action-btn like-btn" type="button" aria-pressed="false">Like</button>
+              </div>
+              <p class="caption">Road trip memories forever.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section upload" id="upload">
+        <div class="container">
+          <div class="section-head">
+            <h2>Upload Your Memories</h2>
+            <p>
+              Share your story with the world through one beautiful frame at a
+              time.
+            </p>
+          </div>
+
+          <form class="upload-card" id="uploadForm" action="#" method="post">
+            <div class="drop-area" id="dropArea" role="button" tabindex="0" aria-label="Upload memory image">
+              <div class="upload-icon">Upload</div>
+              <p>Drag and drop your photo here</p>
+              <small>or click to browse</small>
+              <input id="memoryFile" type="file" accept="image/*" hidden />
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Memory title
+                <input id="memoryTitle" type="text" placeholder="Sunset with my best friend" required />
+              </label>
+
+              <label>
+                Category
+                <select id="memoryCategory" required>
+                  <option value="">Select a category</option>
+                  <option>Nature</option>
+                  <option>Travel</option>
+                  <option>Food</option>
+                  <option>Friends</option>
+                  <option>Family</option>
+                  <option>Pets</option>
+                  <option>Fashion</option>
+                  <option>Street Photography</option>
+                  <option>Memories</option>
+                  <option>Festivals</option>
+                </select>
+              </label>
+
+              <label class="full">
+                Description
+                <textarea id="memoryDescription" rows="5" placeholder="Tell the story behind this moment..." required></textarea>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary wide" id="uploadButton">
+              Upload Memory
+            </button>
+            <p class="form-status" id="uploadStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="section-head left">
+            <h2>About The Platform</h2>
+            <p>
+              This platform helps people save and share their most beautiful
+              memories through photography.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="mini-icon">Lock</span>
+              <h3>Secure Memories</h3>
+              <p>Keep your favorite moments in a safe and organized visual home.</p>
+            </article>
+
+            <article class="feature-card">
+              <span class="mini-icon">Share</span>
+              <h3>Easy Sharing</h3>
+              <p>Inspire friends and family by sharing your meaningful photo stories.</p>
+            </article>
+
+            <article class="feature-card">
+              <span class="mini-icon">Grid</span>
+              <h3>Beautiful Gallery</h3>
+              <p>Enjoy an elegant Pinterest-style layout designed for creativity.</p>
+            </article>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card">
+              <h3>10K+</h3>
+              <p>Photos</p>
+            </article>
+            <article class="stat-card">
+              <h3>5K+</h3>
+              <p>Users</p>
+            </article>
+            <article class="stat-card">
+              <h3>100+</h3>
+              <p>Categories</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="container">
+          <div class="section-head">
+            <h2>Loved By Memory Makers</h2>
+            <p>Creators around the world use Zenvia as their cozy gallery.</p>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" alt="User portrait" />
+              <h3>Aanya R.</h3>
+              <p>
+                Zenvia turned my camera roll into a beautiful storybook. I love
+                the elegant layout.
+              </p>
+            </article>
+
+            <article class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="User portrait" />
+              <h3>Kevin M.</h3>
+              <p>
+                The gallery style feels premium and emotional. It is my favorite
+                place to keep travel moments.
+              </p>
+            </article>
+
+            <article class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?auto=format&fit=crop&w=300&q=80" alt="User portrait" />
+              <h3>Sara P.</h3>
+              <p>
+                Uploading is simple and the category design is so inspiring. It
+                feels like my personal social album.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section newsletter" id="contact">
+        <div class="container newsletter-wrap">
+          <h2>Never Lose Your Best Memories</h2>
+          <p>
+            Join our newsletter for inspiring photo ideas, storage tips, and
+            creative memory prompts.
+          </p>
+
+          <form class="newsletter-form" id="newsletterForm" action="#" method="post">
+            <label for="email" class="sr-only">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="form-status light" id="newsletterStatus" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="logo light">
+            <img src="images/logo.png" alt="Zenvia logo" class="logo-mark" />
+            <span>Zenvia</span>
+          </a>
+          <p>
+            A premium memory-sharing space where your favorite stories stay
+            alive forever.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#upload">Upload</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>Email: hello@zenvia.com</li>
+            <li>Phone: +1 000 123 4567</li>
+            <li>Location: Dreamy Avenue, Creative City</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Follow</h3>
+          <div class="socials" aria-label="Social links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Pinterest">PT</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="Youtube">YT</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">
+        Copyright 2026 Zenvia. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
